@@ -19,16 +19,16 @@
 			xxsmall:  [ null,      '360px'  ]
 		});
 
+	 // Détection d'un appareil tactile
+    		if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {$body.addClass('is-touch');
+   		}
+
 	// Play initial animations on page load.
 		$window.on('load', function() {
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
 			}, 100);
 		});
-
-	// Touch?
-		if (browser.mobile)
-			$body.addClass('is-touch');
 
 	// Forms.
 		var $form = $('form');
