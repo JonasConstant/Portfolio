@@ -2812,6 +2812,12 @@ input, select, textarea {
 
 		}
 
+		/* Désactiver l'affichage du texte sur mobile */
+		body.is-touch .tiles article .content {
+			max-height: 0 !important;  /* Assure que le contenu reste caché */
+			opacity: 0 !important;      /* Masque le texte */
+		}
+
 /* Header */
 
 	#header {
