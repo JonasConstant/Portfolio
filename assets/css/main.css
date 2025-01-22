@@ -2726,6 +2726,16 @@ input, select, textarea {
 				opacity: 1;
 			}
 
+			/* Désactiver le hover pour les appareils tactiles */
+			body.is-touch .tiles article .image {
+				transition: none; /* Désactive toute transformation sur hover */
+			}
+
+			body.is-touch .tiles article .content {
+				max-height: none; /* Désactive la limitation de la hauteur sur touch */
+				opacity: 1; /* Maintient l'opacité active */
+			}
+
 		* + .tiles {
 			margin-top: 2em;
 		}
