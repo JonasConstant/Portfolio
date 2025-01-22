@@ -74,21 +74,6 @@ input, select, textarea {
 
 /* Basic */
 
-	@media (hover: hover) and (pointer: fine) {
-	  .tiles article:hover > .image {
-	    transform: scale(1.1);
-	  }
-	
-	  .tiles article:hover > .image:before {
-	    background-color: #333333;
-	    opacity: 0.35;
-	  }
-	
-	  .tiles article:hover > .image:after {
-	    opacity: 0;
-	  }
-	}
-
 	@-ms-viewport {
 		width: device-width;
 	}
